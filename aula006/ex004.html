@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+    }
+</style>
+<body>
+    <h1>Com um  document.write (`seu nome tem ${nome.length} letras`) posso fazer uma resposta, para nomes, como a quantidade de letras que o nome possui</h1>
+    <h2>msotar uma reposta, como seria o nome em maisculo, como o toLocaleUpperCase e como o nome seria minusculo, com toLocaleLowerCase</h2>
+    
+</body>
+<script>
+    var nome = window.prompt ('qual é seu nome ?')
+    document.write (`olá ${nome} seu nome tem ${nome.length} letras <br>`)
+
+    document.write (`ola ${nome} seu nome em maisculo é ${nome.toLocaleUpperCase () } <br>`)
+
+    document.write(`ola ${nome} e seu nome em minusculo é ${nome.toLocaleLowerCase()}`)
+
+    var n1 = window.prompt('digite um numero')
+    var n2 = window.prompt('digite outro numero')
+    var s = n1 + n2 
+    window.alert = s ('a soma dos valores é' +s)
+    
+</script>
+</html>
