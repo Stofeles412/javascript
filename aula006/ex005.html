@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+            
+        }
+        header menu{
+           
+            font-weight: bold;
+            background-color: rgb(0, 0, 0);
+            height: 70px;
+        }
+        ul li{
+            padding: -20px;
+            color: rgb(141, 13, 13);
+            padding: -50px;
+            display: inline-block;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+        a{
+            color: azure;
+            list-style-type: none;
+            text-decoration: none;
+            padding-left: 20px;
+            font-size: 1.3em;
+        }
+        a:hover{
+            color: blueviolet;
+            text-decoration: underline;
+        }
+        #upe{
+            background-color: aqua;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
 </head>
 <body>
+    <header>
+        <menu>
+            <h1>menu</h1>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">proximo</a></li>
+            
+            </ul>
+        </menu>
+    </header>
+    <article id="artul">
+        <h2>OBS: importantes</h2>
+        <p>tenho varias formar de localizar obejetos em meu html, sendo eles.</p>
+        <ul>
+            <li>por marca com o: <strong>getElementsByTagName()</strong></li> <br>
+
+            <li>por id com: getElementsById() </li> <br>
+
+            <li>por nome: usando o getElementsByName()</li> <br>
+        
+            <li>por classe: getElementsByClassName()</li>
+            
+            <li>por querySelector: querySelector('div.msg')</li>
+            
+    
+        </ul>
+
+    </article>
+    <h2>Lembrando que a forma de acessar esses obejtos são a mesma, so mundando os elmentos que irei trabalhar</h2>
+    <p>caso eu for trabalhar com id, tenho que estar com o id no meu elemento</p>
+
+    <p>o memso serve para os outros, e caso esse elento seja no plural, exemplo a forma por marcação que é pela tag, devo usar um [1] com o numero da tag em ordem, que. desejo trabalhar</p>
+    
+    <p>Lembrando que por querySelector('div.msg') devo usar o . se eu tiver usando class, e o # se eu estiver trablhando com id.</p>
+
+    <p>e ele é a forma mais nova de trabalhar com objetos, por isso, pode não fucionar em nacvegadores, mais antigos. porém e uma otima forma de trablhar.</p>
+    
+
     
 </body>
+
 <script>
     var nome = window.prompt('qual é seu nome ?')
     window.write(`ola ${nome}`)
+    
 </script>
+
 </html>
