@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        div#area{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos dom</title>
+    <h1>eventos dom.</h1>
+    <h2>eventos dom são todas as interações que posso fazer usando o mause por exemplo</h2>
+    <ul>
+        <li>click para quando clicar com o mause</li>
+
+        <li>mauseenter para quando eu pasar o mause por cima do local</li>
+
+        <li>mauseout para quando eu tirar o mause de cima do local</li>
+    </ul>
+
+    <h2>Lembrando que essas são algumas configurações de ventos dom</h2>
+
+    <p>Dai é so eu fazer as configurações que eu quiser quando fazer algumas destas ações.</p>
+
+    <p>e para deixar meu html limpo de java script, posso simplesmente criar uma envento list para a var que irei trabalhar. Como no exemplo a baixo</p>
+
+    a.addEventListener('click', clicar)
+
+    a.addEventListener('mouseenter', entrar )
+      var a = window.document.getElementById ('area')
+
+      a.addEventListener('mouseout', saiu)
+
+    
+
+   
+</head>
+<body>
+    <div id="area">
+interaja...
+    </div>
+    <script>
+            
+    var a = window.document.getElementById('area')
+
+    a.addEventListener('click', clicar)
+
+a.addEventListener('mouseenter', entrar )
+
+a.addEventListener('mouseout', sair)
+ 
+ 
+
+        function clicar(){
+          
+            
+            a.innerText = 'clicou!'
+            a.style.background = 'black'
+            a.style.color = 'white'
+
+        }
+        function entrar(){
+            a.innerText = 'entrou'
+            a.style.background = 'orange'
+        }
+        function sair(){
+            a.innerText = 'saiu'
+            a.style.background = 'pink'
+        }
+
+    </script>
+        
+</body>
+</html>
