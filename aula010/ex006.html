@@ -2,12 +2,28 @@
 <html lang="pt-br">
 <head>
     <style>
+        *{
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
         div#area{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 35px;
             background-color: aqua;
             width: 200px;
             height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#area2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
             line-height: 200px;
             text-align: center;
         }
@@ -46,6 +62,7 @@
     <div id="area">
 interaja...
     </div>
+    <div id="area2" onclick="clicar">meu teste</div>
     <script>
             
     var a = window.document.getElementById('area')
@@ -72,10 +89,14 @@ a.addEventListener('mouseout', sair)
         }
         function sair(){
             a.innerText = 'saiu'
-            a.style.background = 'pink'
+            a.style.background = 'lightgray'
         }
+        
+        
+        
 
     </script>
+    
         
 </body>
 </html>

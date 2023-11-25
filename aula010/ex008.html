@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha calculadora</title>
+</head>
+<body>
+    <h1>calculadora criada somente por mim</h1>
+
+    <input type="number" name="ncal1" id="cal1"> +
+    <input type="number" name="ncal2" id="cal2">
+    <input type="button" value="calcular" onclick="somar()">
+
+    <div id="res">resultado</div>
+    <script>
+     function somar(){
+        var c1 = window.document.getElementById('cal1')
+        var c2 = window.document.getElementById('cal2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(c1.value)
+        var n2 = Number(c2.value)
+        var s = n1 + n2
+        res.innerHTML = `o resultade de ${n1} + ${n2} = ${s}`
+     }
+
+    </script>
+    
+</body>
+</html>
