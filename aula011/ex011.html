@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu ex</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    <h2>Digite abaixo o pais que você vive</h2>
+    
+    <input type="text" name="lug" id="lug" >
+    <input type="button" value="consultar" onclick="calcular()">
+    <p id="res">RESULTADO...</p>
+
+    <script>
+function calcular(){
+        var pais = window.document.getElementById('lug')
+        var res = window.document.getElementById('res')
+        var pais = 'brasileiro'
+        var res 
+       if(pais == 'brasileiro') res.innerHTML = (`vc é ${pais}`)
+   }
+    </script>
+    
+</body>
+</html>
