@@ -2,6 +2,15 @@
 <html lang="pr-br">
 <head>
     <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        </style>
+    <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -20,13 +29,15 @@
             background-color: antiquewhite;
             margin-top: 20px;
             text-align: left;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
         header menu{
             background-color: rgb(66, 64, 64);
             border-radius: 10px;
-            text-align: center;
-            border: solid 3px rgba(0, 0, 0, 0.475);
-            box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.589);
+           text-align: center;
+            border: solid 3px rgba(0, 0, 0, 0.182);
+            box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.243);
             height: 130px;
            
         }
@@ -41,31 +52,49 @@
           font-weight: bold;
           text-align: center;
           
+          
+          
          
         }
         main p{
             padding: 5px;
             text-indent: 10px;
             font-size: 1.1em;
+            text-align: justify;
         }
           a:hover{
             color: rgba(238, 72, 0, 0.985);
             text-decoration: underline;
-            transition: 1s;
+            transition: 0.1s;
         }#pedosite ul li{
             text-align: center;
             background-color: bisque;
         }
+        #menuzinho{
+            position: absolute;
+            padding-left: 190px;
+          color: aliceblue;
+         
+        }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>preciso projetar</title>
 </head>
 <body>
     <header>
-        <menu>
+        <menu> 
+        
             <h1>inicio do site</h1>
+        
+            <span class="material-symbols-outlined" id="menuzinho" onclick="clickMenu">
+                menu
+                </span>
+            
             <ul>
+                
                 <li><a href="#">home</a></li> 
                 <li><a href="#">contato</a></li> 
                 <li><a href="#">inicio</a></li>
@@ -139,6 +168,14 @@
         </ul>
 
     </footer>
+    <script>
+        function clickMenu(){
+        document.getElementById('menuzinho')
+        var abrir = 'menu'
+        abrir.style.display = ('block')
+
+        }
+    </script>
     
 </body>
 </html>
