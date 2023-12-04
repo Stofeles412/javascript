@@ -2,8 +2,9 @@
 *{ font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
-body{ background-color: rgb(142, 142, 244);
+body{ background-color: rgb(20, 20, 51);
     text-transform: capitalize;
   
 
@@ -35,4 +36,10 @@ footer{
 }
 div#dados{
     padding: 20px;
+}
+#foto{
+    width: 200px;
+    border-radius: 500px;
+    height: 200px;
+    text-align: center;
 }
