@@ -38,7 +38,7 @@
            text-align: center;
             border: solid 3px rgba(0, 0, 0, 0.182);
             box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.243);
-            height: 130px;
+            height:100px;
            
         }
           li a{
@@ -70,11 +70,31 @@
             text-align: center;
             background-color: bisque;
         }
+        ul, li{
+            list-style-type: none;
+        }
         #menuzinho{
             position: absolute;
-            padding-left: 190px;
           color: aliceblue;
+          cursor: pointer;
          
+        }
+        #itens{
+            display: none;
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: 900px){
+            #itens{
+                display: flex;
+                
+            }
+            #menuzinho{
+                display: none;
+            }
+            ul, li{
+                list-style-type: none;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -86,14 +106,16 @@
 <body>
     <header>
         <menu> 
+
         
             <h1>inicio do site</h1>
-        
-            <span class="material-symbols-outlined" id="menuzinho" onclick="clickMenu">
+            <span class="material-symbols-outlined" id="menuzinho" onclick="clickMenu()">
                 menu
                 </span>
+        
+         
             
-            <ul>
+            <ul id="itens">
                 
                 <li><a href="#">home</a></li> 
                 <li><a href="#">contato</a></li> 
@@ -170,9 +192,14 @@
     </footer>
     <script>
         function clickMenu(){
-        document.getElementById('menuzinho')
-        var abrir = 'menu'
-        abrir.style.display = ('block')
+        var icon = document.getElementById('menuzinho')
+        var menu = document.getElementById('itens')
+      
+       if (menu.style.display == ('none')){
+        menu.style.display = 'flex'
+       }else{
+        menu.style.display = 'none'
+       }
 
         }
     </script>
